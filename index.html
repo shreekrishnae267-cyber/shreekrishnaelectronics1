@@ -2,25 +2,142 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shree Krishna Electronics | Electronics Service Center</title>
+<title>Shree Krishna Electronic - All Type Electronics Service Point</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+header{
+    background:#000;
+    padding:10px;
+    text-align:center;
+}
+header h1{
+    color:#00ffcc;
+    font-size:40px;
+    letter-spacing:4px;
+    text-shadow:0 0 15px #00ffcc;
+}
+
+/* 3D SLIDER */
+.slider{
+    width:150px;
+    height:150px;
+    margin:50px auto;
+    position:relative;
+    transform-style:preserve-3d;
+    animation:rotate 10s infinite linear;
+}
+
+.slider span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(300px);
+}
+
+.slider span img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 0 20px #00ffcc;
+}
+
+@keyframes rotate{
+    from{ transform:perspective(4000px) rotateY(0deg); }
+    to{ transform:perspective(4000px) rotateY(360deg); }
+}
+
+/* SERVICE BOX */
+.service{
+    text-align:center;
+    padding:20px;
+}
+
+.service h2{
+    color:#00ffcc;
+    margin-bottom:10px;
+    font-size:32px;
+}
+
+.service p{
+    font-size:10px;
+    line-height:10px;
+    color:#ccc;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    color:#00ffcc;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Shree Krishna Electronic</h1>
+    <p> Professional All Type Electronics Goods Audio & Video Service Point</p>
+    <p> Email: S.D.Electronics2@gmail.com, Phone: 70031674256 </p>
+</header>
+
+<!-- 3D IMAGE SLIDER -->
+<div class="slider">
+    <span style="--i:1"><img src="https://robots.net/wp-content/uploads/2023/12/what-is-led-tv-vs-lcd-1701850571.jpg"></span>
+    <span style="--i:2"><img src="https://www.electronicsclap.com/wp-content/uploads/2022/03/Desktop-and-Laptop.jpg"></span>
+    <span style="--i:3"><img src="https://i.pinimg.com/736x/46/7c/fe/467cfe95310e4fd78e3415dd305faa7c.jpg"></span>
+    <span style="--i:4"><img src="https://media.gettyimages.com/id/184281306/photo/home-solution-wifi-devices-network.jpg?s=612x612&w=gi&k=20&c=WC4KeokOo11Qj48OlKoE0KePnXdLG93N6BpFoR_1-Ms="></span>
+    <span style="--i:5"><img src="https://i.pcmag.com/imagery/encyclopedia-terms/cctv-_cctvdig.fit_lim.size_368x.jpg"></span>
+    <span style="--i:6"><img src="https://www.iot-now.com/wp-content/uploads/2021/10/Smart-Home-Automation-System.jpg"></span>
+    
+</div>
+
+<!-- SERVICE TEXT -->
+<div class="service">
+    <h2>LED TV,Audio System,Computer / Laptop ,CCTV Sale - Service & Installation Point</h2>
+    <p>
+        We repair LED TV, Smart TV, Laptop, Home Theatre, 
+        Power Supply Boards, Motherboards and all types of electronics Service.
+    </p>
+    <p>
+        📍 Kolkata | 🔧 Fast Service | 💡 Expert Engineers
+    </p>
+</div>
 
 <style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url("https://as2.ftcdn.net/v2/jpg/09/00/57/41/1000_F_900574131_lAa66Usn8Dy1aT2SN9LpjgAc1vTEqKN8.jpg") no-repeat center center fixed;
+    background: url("https://t4.ftcdn.net/jpg/09/00/57/41/240_F_900574131_lAa66Usn8Dy1aT2SN9LpjgAc1vTEqKN8.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
 .overlay {
     background: rgba(0, 0, 0, 0.7);
-    min-height: 200vh;
+    min-height: 100vh;
     color: white;
 }
 
 header {
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 header h1 {
@@ -47,7 +164,7 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 20px 20px;
 }
 
 .hero h2 {
@@ -83,11 +200,6 @@ footer {
 
 <div class="overlay">
 
-<header>
-    <h1>Shree Krishna Electronics</h1>
-    <p>All Type Audio,Video Electronics Goods Service Point</p>
-</header>
-
 <nav>
     <a href="#home">Home</a>
     <a href="#services">Services</a>
@@ -97,7 +209,7 @@ footer {
 
 <div class="hero" id="home">
     <h4>Expert LCD\LED TV, Hi-Fi Home Audio System,Computer/Laptop Instattation & CCTV Sale,Service And Instattation  with Electronics Component Chip Leavle Repair</h2>
-    <p>Trusted Service Center in Kolkata</p>
+    <p>Trusted Service Center in Kolkata 700024</p>
 </div>
 
 <div class="section" id="about">
@@ -118,22 +230,20 @@ footer {
         <li>✔ Motherboard Repair</li>
         <li>✔ Home Audio System Repair & Service Available</li>
         <li>✔ CCTV Sale,Service,Instattatoin Available</li>
-        <li>✔ Home Service Available</li>
-        <li>✔ Home Service Available</li>
-        <li>✔ Home Service Available</li>
+        
     </ul>
 </div>
 
 <div class="section contact" id="contact">
     <h2>Contact Us</h2>
     <p><strong>Shree Krishna Electronics</strong></p>
-    <p>📍 Kolkata</p>
+    <p>📍 Kolkata 700024</p>
     <p>📞 Phone: 70031674256</p>
     <p>📧 Email: S.D.Electronics2@gmail.com</p>
 </div>
 
 <footer>
-    <p>© 2026 Shree Krishna Electronics | All Rights Reserved</p>
+    <p>© 2000 Shree Krishna Electronics | All Rights Reserved</p>
 </footer>
 
 </div>
